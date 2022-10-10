@@ -1,0 +1,5 @@
+package com.myspring.travel.repository;
+
+public interface BookingRepository {
+
+}

@@ -1,0 +1,18 @@
+package com.myspring.travel.entity;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Flights {
+	
+	private int id;
+	
+	private String name;
+	
+	private String from;
+	
+	private String to;
+	
+	private double price;
+
+}

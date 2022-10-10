@@ -1,0 +1,15 @@
+package com.myspring.travel.repository;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.myspring.travel.entity.Flights;
+import com.myspring.travel.entity.Package;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface PackageRepository extends JpaRepository<Package, Integer> {
+	
+	public List<Flights> findByTo(String loc);
+}
